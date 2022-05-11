@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetBiblioquokka.Acceuil">
+    <StackLayout>
+        <Frame BackgroundColor="#6441a6" Padding="10" CornerRadius="0" HeightRequest="50">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="https://momomotus.ddns.net/quokka.png" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start"/>
+                <Label Text="QUOKKABOOK" HorizontalTextAlignment="Center" TextColor="white" FontSize="30" FontAttributes="Bold" HorizontalOptions="End" VerticalOptions="Center"/>
+                <Label Text="ddd" HorizontalTextAlignment="Center" TextColor="Transparent" FontSize="30" FontAttributes="Bold" HorizontalOptions="End" VerticalOptions="Center"/>
+                <ImageButton x:Name="deco"  BackgroundColor="Transparent" Source="https://momomotus.ddns.net/api_quokka/images/deco.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Deco"  />
+            </StackLayout>
+        </Frame>
+        <Label Text="Livres lus" Background="#6441a6" TextColor="white" FontSize="20" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <ScrollView>
+        <ListView x:Name="BookView" HeightRequest="400" RowHeight="75">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="5" BackgroundColor="#a0a0a0" CornerRadius="0">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding Image}" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="50"/>
+                            <Label Text="{Binding Name}" TextColor="#6441a6" VerticalTextAlignment="Center" WidthRequest="500"/>
+                            <Image Source="{Binding NoteURL}" HeightRequest="50" WidthRequest="50"/>
+                        </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </ScrollView>
+        <Label Text="Livres non lus" Background="#6441a6" TextColor="white" FontSize="20" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <ScrollView>
+        <ListView x:Name="BookView2" HeightRequest="400" RowHeight="75">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="5" BackgroundColor="#a0a0a0" CornerRadius="0">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Image}" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="50"/>
+                                <Label Text="{Binding Name}" TextColor="#6441a6" VerticalTextAlignment="Center" WidthRequest="500"/>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

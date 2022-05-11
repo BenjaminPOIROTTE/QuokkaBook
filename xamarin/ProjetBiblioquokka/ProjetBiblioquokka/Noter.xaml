@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetBiblioquokka.Noter">
+    <StackLayout>
+        <Frame BackgroundColor="#6441a6" Padding="10" CornerRadius="0" HeightRequest="50">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="https://momomotus.ddns.net/quokka.png" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start"/>
+                <Label Text="QUOKKAPEDO" HorizontalTextAlignment="Center" TextColor="white" FontSize="30" FontAttributes="Bold" HorizontalOptions="End" VerticalOptions="Center"/>
+            </StackLayout>
+        </Frame>
+       
+
+       
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" >
+            
+            
+            <Label FontSize="40" Text="ERROR" x:Name="title" HorizontalOptions="Center"/>
+            <Image  x:Name="Image" Margin="20" HorizontalOptions="Center" Source="https://momomotus.ddns.net/api_quokka/images/error.png" HeightRequest="300"  VerticalOptions="Start"/>
+            <Label FontSize="20" Text="NO DESCRIPTION" x:Name="description" HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="20">
+                <ImageButton x:Name="note0" BackgroundColor="Transparent" Source="https://momomotus.ddns.net/api_quokka/images/note0.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"   Clicked="notation0" />
+                <ImageButton x:Name="note1"  BackgroundColor="Transparent" Source="https://momomotus.ddns.net/api_quokka/images/note1.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="notation1"/>
+                <ImageButton x:Name="note2"  BackgroundColor="Transparent" Source="https://momomotus.ddns.net/api_quokka/images/note2.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="notation2"/>
+            
+            </StackLayout>
+            
+        </StackLayout>
+
+        
+       
+       
+        <Button Text="Retour" BackgroundColor="#a481e6" CornerRadius="20" WidthRequest="300" HorizontalOptions="Center" Margin="0,10,0,0" Clicked="backButton"/>
+    </StackLayout>
+    
+</ContentPage>

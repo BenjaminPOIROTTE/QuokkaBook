@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "kwxS3xTWyFDmTfIvCNhPB2XfLeUBq3+NJDoa+dSA+RM7c9x3w9SBJyuY1ParU5aVYcoTKqM7MZwZp5EQIHlpTA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Benjamin\\Desktop\\cours\\ppe\\QuokkaPedo\\quokkapedo\\ProjetBiblioquokka\\ProjetBiblioquokka.iOS\\ProjetBiblioquokka.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Benjamin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Benjamin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Benjamin\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\Benjamin\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
